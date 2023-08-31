@@ -1,0 +1,12 @@
+초안 다운로드
+-------------
+git clone https://github.com/jominkyu1/404Project_Design
+-------------
+
+index.html의 <section> </section> 부분에 메인섹션 내용이 들어갑니다.
+
+-------------
+
+Visual Studio Code 다운로드 후 좌측 확장(Extension)탭 
+-> Bootstrap IntelliSense 다운로드
+(class속성에 편하게넣는 스타일 자동완성 ex) class="border border-2")
