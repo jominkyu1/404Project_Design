@@ -26,6 +26,11 @@
             width: 100%;
             height: 100%;
         }   
+
+        #hello1:hover {
+        text-decoration: none; 
+        }
+
     </style>
     <body>
     <!-- 네비게이션(nav.html) 로드 -->
@@ -37,13 +42,13 @@
             
               <!--Main 네비게이션바 시작-->
               <style>
-                .navbar-nav > li {
-                  margin: 0 10px; /* 원하는 간격으로 조정 */
+                #navbarColor02 ul li {
+                  margin: 0 25px; /* 원하는 간격으로 조정 */
                 }
               </style>
               
-              <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container">
+              <nav class="navbar navbar-expand-lg bg-light border border-5" id="guidenav">
+                <div class="container border border-5">
                   <div class="d-flex align-items-center">
                     <a class="navbar-brand" href="#" data-abc="true"> <strong>구매 GUIDE</strong></a>
                   </div>
@@ -53,16 +58,16 @@
                   <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
                     <ul class="navbar-nav">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#" data-abc="true">Home <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link" href="#" data-abc="true">전체 <span class="visually-hidden">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" data-abc="true">Contact</a>
+                        <a class="nav-link" href="#" data-abc="true">디지털 IT</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" data-abc="true">Pricing</a>
+                        <a class="nav-link" href="#" data-abc="true">생활가전</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" data-abc="true">Social</a>
+                        <a class="nav-link" href="#" data-abc="true">주방가전</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,16 +82,21 @@
                       </li>
                     </ul>
                   </div>
-                  <form onsubmit="event.preventDefault()" class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-secondary" type="submit">Search</button>
-                  </form>
                 </div>
               </nav>
               <!--Main 네비게이션바 끝-->
 
               <br>
               <div class="text-center"><h2>구매가이드</h2></div>
+              <br>
+              <!--search bar 시작-->
+          
+              <form onsubmit="event.preventDefault()" class="d-flex justify-content-center">
+                <input class="form-control me-2 w-25  justify-content-center" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+              </form>
+                            
+              <!--search bar끝-->
               <div class="container px-4 px-lg-5 mt-5">
                   <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                       <div class="col mb-5">
@@ -96,21 +106,20 @@
                               <!-- Product details-->
                               <div class="card-body p-4">
                                   <div class="text-center">
-                                      <style>
                                       <!-- Product name-->
                                       <h5 class="fw-bolder">블루투스<br>이어폰</h5>
                                       <!-- Product explanation-->
                                       가성비 좋고 <br>
                                       나에게 맞는 제품 추천!
-          
-                                      
-                                         
-                                      </style>
                                   </div>
                               </div>
                               <!-- Product actions-->
                               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                  <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">구매하기</a></div>
+                                  <div class="text-center"><a class="btn btn-outline-dark mt-auto " href="#" >블루투스<br>이어폰</a>
+                                    </div>
+                              
+                              <div class="text-decoration-underline border border-5 text-center " id="hello1">안녕</div>
+
                               </div>
                           </div>
                       </div>
@@ -184,9 +193,18 @@
                               </div>
                           </div>
                       </div>
+                      
                   </div>
               </div>
 
+
+     
+
+
+
+
+
+              
 
 
         <!--구매가이드 End-->
