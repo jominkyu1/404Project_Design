@@ -26,6 +26,7 @@
             width: 100%;
             height: 100%;
         }   
+
     </style>
     <body>
     <!-- 네비게이션(nav.html) 로드 -->
@@ -34,6 +35,108 @@
     <header id="headerjs"></header>
         <!-- 매인 섹션 -->
         <section class="py-5">
+
+          margin-bottom: 80px;
+
+            <!--Main 네비게이션바 시작-->
+            <style>
+                #navbarColor02 ul li {
+                  margin: 0 25px; /* 원하는 간격으로 조정 */
+                }
+              </style>
+              
+              <nav class="navbar navbar-expand-lg bg-light border border-5" id="guidenav">
+                <div class="container border border-5">
+                  <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="#" data-abc="true"> <strong>구매 GUIDE</strong></a>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarColor02">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="guide.html" data-abc="true">전체 <span class="visually-hidden">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="digital_IT.html" data-abc="true">디지털 IT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-abc="true">생활가전</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-abc="true">주방가전</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!--Main 네비게이션바 끝-->
+
+
+
+              <div class="container px-4 px-lg-5 my-5 border border-5 border-black">
+                
+                  <!-- 이미지 -->
+                  <div class="md-6">
+                    <img
+                      class="card-img-top mb-5 mb-md-0"
+                      src="https://placehold.it/1200x600"
+                      alt="..."
+                    />
+                  </div>
+              
+                  <!-- 텍스트 요소 -->
+                  <div class="md-6 border border-5">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                      <br>
+                      <h1 class="display-5 fw-bolder">갤럭시 버즈2</h1>
+            
+                      <br>
+                      <p class="lead">
+                        갤럭시 버즈2에 대한 설명입니다. 갤럭시 버즈2에 대한 설명입니다.
+                        갤럭시 버즈2에 대한 설명입니다. 갤럭시 버즈2에 대한 설명입니다.
+                        갤럭시 버즈2에 대한 설명입니다. 갤럭시 버즈2에 대한 설명입니다.
+                      </p>
+              
+                      <div class="d-flex">
+                        <input
+                          class="form-control text-center me-3"
+                          id="inputQuantity"
+                          type="num"
+                          value="1"
+                          style="max-width: 3rem"
+                        />
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                          <i class="bi-cart-fill me-1"></i>
+                          장바구니
+                        </button>
+                        <a class="btn btn-outline-dark mx-2" href="weeksale.html">
+                          <i class="bi-arrow-return-right me-1"></i>
+                          목록으로
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+              
+
+
+
+              
+
             
         </section>
         <!-- 푸터 (footer.html) -->
