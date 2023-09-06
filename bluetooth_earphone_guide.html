@@ -130,22 +130,28 @@
                   
                   <!--nav bar 2 start-->
 
+                  <style>
+                    .nav-item:hover{
+                      font-weight: bold;
+                    }
+                  </style>
+
                   <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 justify-content-center">
                     <ul class="nav nav-pills">
                         <li class="nav-item" style="margin-right: 30px;">
-                            <a class="nav-link" href="#section1">First</a>
+                            <a class="nav-link" href="#section1">첫번째 성능</a>
                         </li>
                         <li class="nav-item" style="margin-right: 30px;">
-                            <a class="nav-link" href="#section2">Second</a>
+                            <a class="nav-link" href="#section2">두번째 성능</a>
                         </li>
                         <li class="nav-item" style="margin-right: 30px;">
-                          <a class="nav-link" href="#section3">Third</a>
+                          <a class="nav-link" href="#section3">세번째 성능</a>
                        </li>
                        <li class="nav-item" style="margin-right: 30px;">
-                          <a class="nav-link" href="#section4">Fourth</a>
+                          <a class="nav-link" href="#section4">네번째 성능</a>
                        </li>
                        <li class="nav-item" style="margin-right: 30px;">
-                        <a class="nav-link" href="#section5">Fifth</a>
+                        <a class="nav-link" href="#section5">다섯번째 성능</a>
                        </li>
                         
                     </ul>
@@ -153,7 +159,7 @@
             
                 <!-- 스크롤 대상이 되는 섹션 -->
                 <div id="section1" class="scrollspy-section bg-body-tertiary p-3 rounded-2">
-                    <h4>First heading</h4>
+                    <h4>첫번째 성능</h4>
                     <p>첫 번째 섹션 내용...</p>
                     <p>첫 번째 섹션 내용...</p>
                     <p>첫 번째 섹션 내용...</p>
@@ -165,7 +171,7 @@
                     <p>첫 번째 섹션 내용...</p>
                 </div>
                 <div id="section2" class="scrollspy-section bg-body-tertiary p-3 rounded-2">
-                    <h4>Second heading</h4>
+                    <h4>두번째 성능</h4>
                     <p>두 번째 섹션 내용...</p>
                     <p>두 번째 섹션 내용...</p>
                     <p>두 번째 섹션 내용...</p>
@@ -179,7 +185,7 @@
                     
                 </div>
                 <div id="section3" class="scrollspy-section bg-body-tertiary p-3 rounded-2">
-                    <h4>Third heading</h4>
+                    <h4>세번째 성능</h4>
                     <p>세 번째 섹션 내용...</p>
                     <p>세 번째 섹션 내용...</p>
                     <p>세 번째 섹션 내용...</p>
@@ -195,7 +201,7 @@
 
                 </div>
                 <div id="section4" class="scrollspy-section bg-body-tertiary p-3 rounded-2">
-                    <h4>Fourth heading</h4>
+                    <h4>네번째 성능</h4>
                     <p>네 번째 섹션 내용...</p>
                     <p>네 번째 섹션 내용...</p>
                     <p>네 번째 섹션 내용...</p>
@@ -216,6 +222,17 @@
                     <p>다섯 번째 섹션 내용...</p>
                     <p>다섯 번째 섹션 내용...</p>
                 </div>
+
+                <script>
+                  window.addEventListener("scroll", function() {
+                      var navbar = document.getElementById("navbar-example2");
+                      if (window.pageYOffset >= 1000) { // 스크롤 위치 조건을 원하는 위치로 조정
+                          navbar.classList.add("fixed-top");
+                      } else {
+                          navbar.classList.remove("fixed-top");
+                      }
+                  });
+              </script>
  
                   <!--nav bar 2 end-->
                   <div class="">recommend product</div>
