@@ -43,8 +43,8 @@
                 }
               </style>
               
-              <nav class="navbar navbar-expand-lg bg-light border border-5" id="guidenav">
-                <div class="container border border-5">
+              <nav class="navbar navbar-expand-lg bg-light" id="guidenav">
+                <div class="container ">
                   <div class="d-flex align-items-center">
                     <a class="navbar-brand" href="#" data-abc="true"> <strong>구매 GUIDE</strong></a>
                   </div>
@@ -84,7 +84,7 @@
 
 
 
-              <div class="container px-4 px-lg-5 my-5 border border-5 border-black">
+              <div class="container px-4 px-lg-5 my-5">
                 
                   <!-- 이미지 -->
                   <div class="md-6">
@@ -96,10 +96,10 @@
                   </div>
               
                   <!-- 텍스트 요소 -->
-                  <div class="md-6 border border-5">
+                  <div class="md-6">
                     <div class="d-flex flex-column justify-content-center h-100">
-                      <br>
-                      <h1 class="display-5 fw-bolder">갤럭시 버즈2</h1>
+                      <div id="explanation">
+                      <h1 class="display-5 fw-bolder">블루투스 이어폰</h1>
             
                       <br>
                       <p class="lead">
@@ -107,26 +107,54 @@
                         갤럭시 버즈2에 대한 설명입니다. 갤럭시 버즈2에 대한 설명입니다.
                         갤럭시 버즈2에 대한 설명입니다. 갤럭시 버즈2에 대한 설명입니다.
                       </p>
-              
-                      <div class="d-flex">
-                        <input
-                          class="form-control text-center me-3"
-                          id="inputQuantity"
-                          type="num"
-                          value="1"
-                          style="max-width: 3rem"
-                        />
-                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                          <i class="bi-cart-fill me-1"></i>
-                          장바구니
-                        </button>
-                        <a class="btn btn-outline-dark mx-2" href="weeksale.html">
-                          <i class="bi-arrow-return-right me-1"></i>
-                          목록으로
-                        </a>
-                      </div>
+
                     </div>
-                  </div>
+
+                    <br>
+                    <br>
+
+                    
+                      
+
+                    <!-- Recommand item start -->
+                    <h1 class="fw-bolder mx-auto">추천아이템</h1>
+<div class="col-md-3 mx-auto mb-5"> <!-- mx-auto를 사용하여 가운데 정렬 -->
+  <div class="card h-100">
+    <!-- Product image -->
+    <img class="card-img-top" src="images/buds2.png" alt="버즈2" />
+    <!-- Product details -->
+    <div class="card-body p-4">
+      <div class="text-center">
+        <!-- Product name -->
+        <h5 class="fw-bolder">
+          <a href="iteminfo.html" class="text-decoration-none">Galaxy Buds 2</a>
+        </h5>
+        <!-- Product price -->
+        <span class="fw-bolder">87,000원</span>
+      </div>
+    </div>
+    <!-- Product actions -->
+    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+      <div class="text-center">
+        <a class="btn btn-outline-dark mt-auto mb-1" href="#">장바구니</a>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary mt-auto" href="iteminfo.html">구매하기</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Recommand item end -->
+
+
+
+                     
+                      
+
+
+
+
+                      
                   
                   <!--nav bar 2 start-->
 
@@ -226,7 +254,7 @@
                 <script>
                   window.addEventListener("scroll", function() {
                       var navbar = document.getElementById("navbar-example2");
-                      if (window.pageYOffset >= 1000) { // 스크롤 위치 조건을 원하는 위치로 조정
+                      if (window.pageYOffset >= 2000) { // 스크롤 위치 조건을 원하는 위치로 조정
                           navbar.classList.add("fixed-top");
                       } else {
                           navbar.classList.remove("fixed-top");
@@ -235,7 +263,8 @@
               </script>
  
                   <!--nav bar 2 end-->
-                  <div class="">recommend product</div>
+                 
+              </div>
               </div>
               
 
